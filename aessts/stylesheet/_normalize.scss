@@ -12,3 +12,7 @@ a{
 img{
     object-fit:cover;
 }
+header,footer,div,section,nav,figure,figcaption,article,aside{
+    display: flex;
+    flex-wrap: wrap;
+}
