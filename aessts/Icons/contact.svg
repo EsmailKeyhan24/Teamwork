@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="contact" viewBox="0 0 32 32">
+  <path d="M8.25 25a5 5 0 0 1-4.9-6 5.12 5.12 0 0 1 5.08-4H10V25ZM23.75 25a5 5 0 0 0 4.9-6 5.12 5.12 0 0 0-5.08-4H22V25Z" style="fill:none;stroke:#0832ff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></path>
+  <path d="M7 15V13.82a9.11 9.11 0 0 1 6.91-9A9 9 0 0 1 25 13.61V15M10 25h0a3 3 0 0 0 3 3" style="fill:none;stroke:#0832ff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></path>
+  <circle cx="16" cy="28" r="1" style="fill:#0832ff"></circle>
+  <line x1="7.5" x2="7.5" y1="15.5" y2="24.5" style="fill:none;stroke:#0832ff;stroke-linecap:round;stroke-linejoin:round"></line>
+  <rect width="2" height="10" x="22" y="15" style="fill:#0832ff"></rect>
+</svg>

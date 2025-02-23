@@ -1,0 +1,333 @@
+header{
+    width: 100%;
+    height: 75vh;
+    background-image: url(../../aessts/IMG/slider3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom-right-radius: 100px;
+    padding: 30px;
+    overflow: hidden;
+    >.header_top{
+        width: 100%;
+        height: 40%;
+        background-color: #FFF;
+        // display: flex;
+        border-radius: 8px;
+        >.contact{
+            width: 100%;
+            height: 75%;
+            display: flex;
+            justify-content: space-between;
+            >figure{
+                // padding: 30px;
+                width: 23%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-left: 50px;
+                >img{
+                    width: 100%;
+                    height: 60%;
+                    object-fit: cover;
+                }
+            }
+            >.email{
+                // height: 100%;
+                width: 45%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                >span{
+                    display: inline-block;
+                    width: 60px;
+                    height: 50px;
+                    text-align: center;
+                    margin-left: 200px;
+                    color: $Thirdth-text-color;
+                    >img{
+                        @extend.width;
+                    }
+                }
+                >a{
+                    // width: 50%;
+                    font-size: px;
+                    padding-left: 20px;
+                    color: #444444;
+                    text-transform: capitalize;
+                    font-family: JosefinSans;
+                    text-decoration: none;
+                }
+            }
+            >div{
+                width: 25%;
+                height: 75%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                >a{
+                    display: inline-block;
+                    width: 90%;
+                    height: 50px;
+                    margin-top: 20px;
+                    text-align: center;
+                    line-height: 50px;
+                    background-color: $first-background-color;
+                    color: $fourth-text-color;
+                    font-family: sans-serif;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    font-size: 20px;
+                    transition: .5s;
+                    >span{
+                        font-size: 30px;
+                        padding-right: 10px;
+                    }
+                    &:hover{
+                        transform: translateY(-4px);
+                        background-color:#224bf1;
+                    }
+                }
+            }
+        }
+        >.navgition{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            >nav{
+                border-radius: 10px;
+                width: 90%;
+                height: 100%;
+                background-image: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+                display: flex;
+                >.left{
+                    width: 80%;
+                    height: 100%;
+                    display: flex;
+                    border-right: 1px solid gray;
+                    >ul{
+                        width: 80%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        >li{
+                            list-style: none;
+                            padding-inline: 15px;
+                            position: relative;
+                            transition: .5s;
+                            >i{
+                                color: $second-text-color;
+                                padding-left: 5px;
+                            }
+                            >a{
+                                color: $second-text-color;
+                                font-family: josefinSans;
+                                text-decoration: none;
+                            }
+                            &::after{
+                                content: '';
+                                display: block;
+                                width: 0px;
+                                height: 0px;
+                                border: 2px solid #FFF;
+                                position: absolute;
+                                left: 33px;bottom:-33px;
+                                opacity: 0;
+                                transition: .5s;
+                            }
+                            &:nth-of-type(1){
+                                &::after{
+                                    left: 20px;bottom: -33px;
+                                }
+                            }
+                            &:nth-of-type(2){
+                                >a{
+                                    color: #FFF;
+                                }
+                                &::after{
+                                    opacity: 1;
+                                    height: 10px;
+                                }
+                            }
+                            &:hover::after{
+                                height: 10px;
+                                opacity: 1;
+                            }
+                            &:hover>a{
+                                color: #FFF;
+                            }
+                            >ul{
+                                width: 300%;
+                                height: 200px;
+                                position: absolute;
+                                background-color: #FFF;
+                                left: 0;bottom: -230px;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: 1s;
+                                >li{
+                                    padding-block: 5px;
+                                    transform: translateX(80px);
+                                    list-style: none;
+                                    transition: 1s;
+                                    >.icons-link{
+                                        color: $First-text-color;
+                                        font-family: JosefinSans;
+                                        text-decoration: none;
+                                        transform: translateX(0px);
+                                        &:hover{
+                                            color: rgb(1, 1, 71);
+                                        }
+                                    }
+                                }
+                            }
+                            &:hover>ul>li{
+                                transform: translateX(10px);
+                            }
+                            &:hover>ul{
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    >.icons{
+                        width: 20%;
+                        height: 100%;
+                        >ul{
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            >li{
+                                padding-inline: 10px;
+                                list-style: none;
+                                transition: .5s;
+                                border-radius: 8px;
+                                position: relative;
+                                >span{
+                                    display: inline-block;
+                                    width: 50px;
+                                    height: 50px;
+                                    text-align: center;
+                                    line-height: 50px;
+                                    font-size: 30px;
+                                    transition: .5s;
+                                    border-radius: 5px;
+                                    >a{
+                                        color: $fourth-text-color;
+                                        text-decoration: none;
+                                    }
+                                    &:hover{
+                                        transform: rotateY(180deg);
+                                    }
+                                    &:hover{
+                                        background-color: #1c9dbf;
+                                    }
+                                }
+                                >p{
+                                    width: 100%;
+                                    height: 20px;
+                                    background-color: #1c9dbf;
+                                    font-size: 12px;
+                                    text-align: center;
+                                    line-height: 20px;
+                                    position: absolute;
+                                    left: 6px;bottom: -40px;
+                                    opacity: 0;
+                                    transition: .4s;
+                                    font-size: 16px;
+                                    color: #FFF;
+                                    font-family: JosefinSans;
+                                    text-transform: capitalize;
+                                }
+                                &:hover>p{
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+                >.right{
+                    width: 20%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    >*{
+                        width: 50%;
+                        height: 100%;
+                    }
+                    >a{
+                        font-size: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: $fourth-text-color;
+                        position: relative;
+                        &:nth-of-type(1){
+                            border-right: 1px solid gray;
+                            transition: .3s;
+                            >div{
+                                width: 300%;
+                                height: 200px;
+                                background-color: $secondry-backgrond-color;
+                                position: absolute;
+                                left: -255px;
+                                bottom: -200px;
+                                clip-path: polygon(0 5%,80% 5%, 82.5% 0, 85% 5%, 100% 5%, 100% 100%,0 100%);
+                                border-radius: 10px;
+                                visibility: hidden;
+                            }
+                            &:hover>div{
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    >.row-about{
+        width: 20%;
+        height: 30%;
+        margin-top: 195px;
+        >h3{
+            font-size: 30px;
+            font-family: JosefinSans;
+            text-transform: capitalize;
+            color: $First-text-color;
+            font-weight: 400;
+            margin-top: 30px;
+            padding-left: 10px;
+        }
+        >div{
+            width: 60%;
+            height: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            background-color: $secondry-backgrond-color;
+            border-radius: 8px;
+            >a{
+                text-decoration: none;
+                color: $Thirdth-text-color;
+                font-size: 20px;
+            }
+            >span{
+                display: flex;
+                padding-inline: 10px;
+                >i{
+                    padding-right: 10px;
+                }
+                >p{
+                    color: $Thirdth-text-color;
+                    text-transform: capitalize;
+                    font-family: JosefinSans;
+                    user-select: none;
+                }
+            }
+        }
+    }
+}

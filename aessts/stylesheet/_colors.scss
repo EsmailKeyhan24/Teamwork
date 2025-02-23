@@ -1,0 +1,30 @@
+$First-text-color:#444444;
+$second-text-color:#FFFFFFB3;
+$Thirdth-text-color:#285BBB;
+$fourth-text-color:#FFF;
+// ______________________ END OF TEXT COLOR_________________
+$first-background-color: #1c9dbf;
+$secondry-backgrond-color:#FFF;
+// _____________________ END OF BACKGROUND COLOR ________________
+.border-test{
+    border: 2px solid black;
+}
+.border-test2{
+    border: 2px solid gold;
+}
+.border-test3{
+    border: 2px solid green;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.width{
+    width: 100%;
+    height: 100%;
+}
+@font-face {
+    font-family: JosefinSans;
+    src: url(../../aessts/Font/JosefinSans-Italic-VariableFont_wght.ttf);
+}
