@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.border-test {
+.border-test, .get-meds-from-us > .years-of-exprience {
   border: 2px solid black;
 }
 
@@ -449,4 +449,19 @@ header > .row-about > div > span > p {
   background-color: #1c9dbf;
   color: #FFF;
   transform: scale(1.1);
+}
+
+.get-meds-from-us {
+  width: 100%;
+  height: 130vh;
+  background-color: #285BBB;
+  position: relative;
+  z-index: -1;
+}
+.get-meds-from-us > .years-of-exprience {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }/*# sourceMappingURL=index.css.map */
