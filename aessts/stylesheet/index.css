@@ -1,1 +1,49 @@
+.header_top {
+  width: 100%;
+  min-height: 80vh;
+  background-image: url(../../aessts/img/slider3.jpg);
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 0 0 70px 0;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-top: 60px;
+}
+
+.header_top > .top-menu {
+  width: 100%;
+  height: 170px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+}
+
+.header_top > .top-menu > figure {
+  width: 20%;
+  height: 100%;
+}
+
+.header_top > .top-menu > figure > img {
+  width: 100%;
+  height: auto;
+}
+
+.header_top > .navbar {
+  width: 95%;
+  height: 70px;
+  background-color: #285bbb;
+  border-radius: 10px;
+  position: absolute;
+  top: 40%;
+}
 /*# sourceMappingURL=index.css.map */
